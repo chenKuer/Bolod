@@ -1,0 +1,383 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<title>Bolod体验网站</title>
+        <link rel='icon' href='icon/head.ico'    type=image/x-icon>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+        <meta name="description" content="宝龙操作系统在线体验网站 Bolod OS在线体验网站是bolod公司推出的基于Linux的操作系统，集众多功能于一体，高速便捷，安全稳定"> 
+        <meta name="keywords" content="宝龙|Bolod|体验网站|Bolod OS|宝龙体验网站|宝龙在线平台" />
+        <link href="css/jquery-ui-1.8.24.custom.css" rel="stylesheet" type="text/css" />
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+        
+		<link href="css/themesetting.css" rel="stylesheet"  type="text/css" >
+        
+        <link href="css/myCSS.css" rel="stylesheet" type="text/css" />
+        <!--   artDialog 主题CSS-->
+		<link href="css/skins/black.css" rel="stylesheet" />
+        <!--  powerFloat万能浮动层下拉层插件  -->
+		<link href="css/powerFloat.css" rel="stylesheet" type="text/css"/>	
+        <!--  右键弹出菜单   -->
+		<link href="css/smartMenu.css" rel="stylesheet"  type="text/css" />
+<!-- startMenu -->
+     
+      <!-- welcome 
+      <link href="css/welcome.css" rel="stylesheet" type="text/css" />
+	<!-- tourguide 
+      <link href="css/tourguide.css" rel="stylesheet" type="text/css" />
+      -->
+        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.24.custom.min.js"></script>
+        <!-- powerFloat万能浮动层下拉层插件   -->
+		<script type="text/javascript" src="js/jquery-powerFloat-min.js"></script>
+        <!-- 右键弹出菜单 -->
+		<script type="text/javascript" src="js/jquery-smartMenu.js"></script>
+		<script type="text/javascript" src="js/jquery-class.js"></script>
+    <!-- 对话框 -->
+		<script type="text/javascript" src="js/artDialog.js"></script>
+		<script type="text/javascript" src="js/iframeTools.js"></script>
+     <!-- 导航框 -->
+    <script type="text/javascript" src="js/guidedtoursystem.js"></script>
+    <script type="text/javascript" src="js/welcomesystem.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  
+        
+     
+        <script type="text/javascript" src="js/interface.js"></script>
+          <!-- 图标数据  -->
+		<script type="text/javascript" src="js/data.js"></script>
+        <!-- 主体js   -->
+		<script type="text/javascript" src="js/core.js"></script>
+
+   
+        <!--[if lt IE 7]>
+ 			<style type="text/css">
+ 				div, img { behavior: url(js/iepngfix.htc) }
+ 			</style>
+		<![endif]-->
+	</head>
+	
+    <body>
+      <div id="loading-page" > 
+         <img class="loading-background" src="image/bolodbg-on.jpg">
+         <div>
+           <img class="loading-icon" src="image/bolodfg-on-icon.png">
+           <img class="loading-bar" src="image/loading.gif">
+         </div>
+      </div> 
+
+      <div id="welcome" style="display: block;z-index:9999">
+      <div id="welcome-screen" class="selected-window" >
+        <div class="control">
+          <div class="window-title">欢迎尝试 Bolod 在线体验</div>
+        </div>
+        <div class="welcome-header">
+          <h1>欢迎尝试 Bolod 在线体验</h1>
+          <h2>用我们的在线演示来尝试 Bolod，浏览器全屏体验效果更佳。</h2>
+        </div>
+        <ul>
+          <li>
+            <a class="welcome-computer">
+              <img src="icon/computer.png">
+              <span>我的电脑</span>
+          </a>
+          </li>
+          <li>
+            <a class="welcome-email">
+              <img src="icon/evolution-mail.png">
+              <span>检查邮件</span>
+          </a>
+          </li>
+          <li>
+            <a class="welcome-firefox">
+              <img src="icon/firefox.png">
+              <span>火狐浏览器</span>
+          </a>
+          </li>
+          <li>
+            <a class="welcome-wps-w">
+              <img src="icon/wps_w.png">
+              <span>WPS文字</span>
+          </a>
+          </li>
+          <li>
+            <a class="welcome-wps-s">
+              <img src="icon/wps_s.png">
+              <span>WPS表格</span>
+          </a>
+          </li>
+          <li>
+            <a class="welcome-wps-p">
+              <img src="icon/wps_p.png">
+              <span>WPS演示</span>
+          </a>
+          </li>
+          <li>
+            <a class="welcome-win">
+              <img src="icon/win.png">
+              <span>操作系统平台</span>
+          </a>
+          </li>
+          <li>
+            <a class="welcome-picture">
+              <img src="icon/gthumb.png">
+              <span>图片查看器</span>
+          </a>
+          </li>
+          <li>
+            <a class="welcome-taiqiu">
+              <img src="icon/gtaiqiu.png">
+              <span>桌球</span>
+          </a>
+          </li>
+        </ul>
+        <a id="go-around" class="go-around" href="#">四处看看</a>
+        <a class="tour-mode" href="#">观看此向导</a>
+      </div>
+    </div>
+
+    <div id="tour-guide" >
+      <div class="next-button">›</div>
+      <div class="prev-button">‹</div>
+      <div class="guide-container welcome" style="display: block;">
+        <div class="guide-logo"><img src="icon/bolod-icon.png"></div>
+        <h3>Bolod 在线体验</h3>
+        <p>希望您喜欢 Bolod 在线漫游 <a href="http://www.bolod.net/index.php?m=content&c=index&a=lists&catid=52" target="_blank">准备好下载了吗？</a> 或 <a href="http://www.bolod.net" target="_blank">返回网站</a></p>
+      </div>
+      <div class="guide-container browserfilesGuide" style="display: none;">
+        <div class="guide-logo"><img src="icon/computer.png">
+        </div>
+        <h3>我的电脑</h3>
+        <p>
+          您可以轻松快捷的从 Bolod 的主目录访问您的文件和文件夹。
+        </p>
+      </div>
+      <div class="guide-container checkemailGuide" style="display: none;">
+        <div class="guide-logo"><img src="icon/evolution-mail.png">
+        </div>
+        <h3>检查邮件</h3>
+        <p>
+          使用邮件客户端来读、写和发送邮件，将会简便快捷。
+        </p>
+      </div>
+      <div class="guide-container surfthewebGuide" style="display: none;">
+        <div class="guide-logo"><img src="icon/firefox.png">
+        </div>
+        <h3>浏览网络</h3>
+        <p>
+          使用Bolod 和 Firefox可以安全快速的浏览网络。
+        </p>
+      </div>
+      <div class="guide-container wpswGuide" style="display: none; z-index: 3;">
+        <div class="guide-logo"><img src="icon/wps_w.png">
+        </div>
+        <h3>WPS文字</h3>
+        <p>
+       具有丰富的全屏幕编辑功能，满足各界文字
+       工作者编辑、打印各种文件的需要和要求。
+        </p>
+      </div>
+      <div class="guide-container wpssGuide" style="display: none;">
+        <div class="guide-logo"><img src="icon/wps_s.png">
+        </div>
+        <h3>WPS表格</h3>
+        <p>
+          WPS 表格可以进行各种数据的处理、统计
+          分析和辅助决策操作。
+        </p>
+      </div>
+      <div class="guide-container wpspGuide" style="display: none; z-index: 3;">
+        <div class="guide-logo"><img src="icon/wps_p.png">
+        </div>
+        <h3>WPS演示</h3>
+        <p>
+          使用WPS 演示可以快速创建动态且具有精美外
+          观的演示文稿。让撰写专业文档变得更简单。
+        </p>
+      </div>
+      <div class="guide-container osGuide" style="display: none; z-index: 3;">
+        <div class="guide-logo"><img src="icon/win.png">
+        </div>
+        <h3>操作系统平台</h3>
+        <p>
+          可查看系统信息和计算机信息。
+        </p>
+      </div>
+      <div class="guide-container pictureGuide" style="display: none;">
+        <div class="guide-logo"><img src="icon/gthumb.png">
+        </div>
+        <h3>图片查看器</h3>
+        <p>
+          对用户的照片或图片进行查看和管理。
+        </p>
+      </div>
+      <div class="guide-container taiqiuGuide" style="display: none; z-index: 3;">
+        <div class="guide-logo"><img src="icon/gtaiqiu.png">
+        </div>
+        <h3>桌球</h3>
+        <p>
+          Bolod 的游戏平台集成了丰富的游戏资源，让用户在工作之余放松身心。
+        </p>
+      </div>
+      
+      <div class=" tour-buttons">
+        <div class="explore-to-welcome">欢迎画面</div>
+        <div class="explore-to-download">下载</div>
+        <a href="http://www.bolod.net"  target="_blank">
+        <div class="explore-to-exit">返回网站</div>
+        </a>
+      </div>
+    </div>
+
+    <div id="download-window" class="download-window">
+      <div class="title-bar">
+        <div class="close"></div>
+      </div>
+      <div class="error-container">
+        <h1>感谢体验 宝龙操作系统</h1>
+        <a class="download" href="http://www.bolod.net/index.php?m=content&c=index&a=lists&catid=52" target="_blank">下载 宝龙</a>
+        <h2>请注意：这个仅仅是个在线演示。您需要下载后方可享用真实的功能</h2>
+      </div>
+    </div>
+    	<!--*********************************************************-->
+      <!-- ******************更换背景窗口 开始 ************** -->
+      <!--*********************************************************-->
+		<div id="themeSetting_wrap" style="display:none;">
+				
+                <div id="themeSetting_head" class="themeSetting_head">		
+					<div id="themeSetting_tabTheme" class="themeSetting_tab current" style="display: block;">系统主题</div>		
+				</div>	
+        <!-- ******************更换背景缩略图显示  ************** -->	
+				<div id="themeSetting_body" class="themeSetting_body">	
+					<div id="themeSetting_area"  class="themeSetting_area" style="display: block;">						 
+					<a href="###" themeid="theme_blue" class="themeSetting_settingButton" id="themeSetting_theme_blue">
+						<div style="background: url(images/theme_blue.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
+						<div class="themeSetting_settingButton_text">梦幻光影</div>
+					</a>   
+					<a href="###" themeid="theme_pinky_night" class="themeSetting_settingButton" id="themeSetting_theme_pinky_night">
+						<div style="background: url(images/theme_pinky_night.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
+						<div class="themeSetting_settingButton_text">粉红之夜</div>
+					</a>      
+					<a href="###" themeid="theme_green" class="themeSetting_settingButton" id="themeSetting_theme_green">
+						<div style="background: url(images/theme_green.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
+						<div class="themeSetting_settingButton_text">青青世界</div>
+					</a>  
+					<a href="###" themeid="theme_wood1" class="themeSetting_settingButton" id="themeSetting_theme_wood1">
+						<div style="background: url(images/theme_wood1.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
+						<div class="themeSetting_settingButton_text">温馨木纹</div>
+					</a>         
+					<a href="###" themeid="theme_wood2" class="themeSetting_settingButton" id="themeSetting_theme_wood2">
+						<div style="background: url(images/theme_wood2.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
+						<div class="themeSetting_settingButton_text">黑色木纹</div>
+					</a>              
+					</div>						
+					<div id="themeSetting_wallpaper" class="themeSetting_wallpaper" style="display: none;"></div>			
+				</div>
+		</div>
+
+      <!--*********************************************************-->
+      <!-- ******************背景图片容器 开始 ************** -->
+      <!--*********************************************************-->
+		<div id="zoomWallpaperGrid5" class="zoomWallpaperGrid" style="position: absolute; z-index: -11; left: 0pt; top: 0pt; overflow: hidden; height: 469px; width: 1392px;"><img id="zoomWallpaper" class="zoomWallpaper" src="images/background0.jpg" style="position: absolute; top: 0pt; left: 0pt;  height: 469px; width: 1392px;" /></div>
+      
+     <!--*********************************************************-->
+      <!-- *****************右上角图标 ************** -->
+      <!--*********************************************************-->
+
+
+
+
+<div class="shutdown-button"><img src="icon/plasma_22_none.png" class="shutdown-icon" style="z-index:9999"></div>
+
+  <div class="shutdown-panel-div">
+    <div class="shutdown-panel">
+      <ul>
+        <li>
+          <img src="icon/shutdown-active.png">
+          <span>活动</span>
+        </li>
+        <li>
+          <img src="icon/shutdown-keyboard.png">
+          <span>快捷设置</span>
+        </li>
+        <li>
+          <img src="icon/shutdown-shezhi.png">
+          <span>文件夹视图设置</span>
+        </li>
+        <li>
+          <img src="icon/shutdown-lock.png">
+          <span>解锁部件</span>
+        </li>
+        <li>
+          <img src="icon/shutdown-screen.png">
+          <span>锁定屏幕</span>
+        </li>
+        <li>
+          <img src="icon/shutdown-leave.png">
+          <span>离开</span>
+        </li>
+      </ul>
+    </div> 
+  </div>
+
+      <!--*********************************************************-->
+      <!-- ******************任务栏 右下方  ************** -->
+      <!--*********************************************************-->
+        
+        <div id='taskBarRight' class="taskBarRight"  >
+        <!-- 快捷图标栏     -->
+        <div id="taskBarRight_quick" class="taskBarRight_quick" >
+        <ul>
+
+        <li>
+          <img src='image/taskBar/lockscreen.png' title="锁屏" />
+        </li>
+      
+         <li>
+          <img src='image/taskBar/keyboard.png' title="虚拟键盘" />
+        </li>
+         <li>
+          <img src='image/taskBar/volume.png' title="音量" />
+        </li>
+         <li>
+          <img src='image/taskBar/battery_full.png' title="电池充满" />
+        </li>
+        </ul>
+        </div>
+        
+         <!-- 时间显示                   -->
+        <div id="" class="taskBarRight_time" >
+        <span id="timeDiv" class="system_time"> 
+        </span>
+        <span id="dateDiv" class="system_date">
+        </span>
+         </div>
+        
+         <!-- 桌面切换    -->
+        <div id="taskBarRight_desktop" class="taskBarRight_desktop" >
+        <table width="78" height="46" border='0' cellpadding="0" >
+        <tr>
+        <td><a name="desk_1"><div class='desktop_change current' href="javascript:void(0)" title="工作" >工作</div></a></td>
+        
+        <td><a name="desk_2"><div class='desktop_change' href="javascript:void(0)" title="工作" >上网</div></a></td>
+        </tr>
+        
+         <tr>
+        <td><a name="desk_3"><div class='desktop_change' href="javascript:void(0)" title="工作" >体验</div></a></td>
+        
+        <td> <a name="desk_4"><div class='desktop_change' href="javascript:void(0)" title="工作" >娱乐</div></a></td>
+        </tr>
+         </table>
+  
+         </div>
+        
+        </div>  
+
+        <div id='download' style="width:1000px;height:300px;z-index:99999;display:none;"><img class="" src="file:///Users/kuer/Documents/workspace/BolodWeb/bolod/wps_s.jpg" alt="file:///Users/kuer/Documents/workspace/BolodWeb/bolod/wps_s.jpg" onclick="download()"> </div>
+         <!--*********************************************************-->
+      <!-- ****************** 上网桌面 容器  ************** -->
+      <!--*********************************************************-->  
+         <script type="text/javascript" src="js/myjs.js"></script>
+	</body>
+	
+	
+</html>
